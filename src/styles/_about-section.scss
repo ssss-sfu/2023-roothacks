@@ -1,6 +1,7 @@
 @import "./tokens.scss";
 
-#about-section, #ssss-section {
+#about-section,
+#ssss-section {
   h3 {
     font-size: 1rem;
   }
@@ -17,9 +18,9 @@
   }
 
   .icon-container {
-      display: grid;
-      grid-template-columns: 1fr;
-      place-items: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
   }
 
   @include viewport(desktop) {
@@ -33,6 +34,15 @@
 
 @include viewport(desktop) {
   #about-section article {
-    order: 1
+    order: 1;
+  }
+}
+
+@include viewport(tablet) {
+  #about-section,
+  #ssss-section {
+    h2 {
+      text-align: center;
+    }
   }
 }
