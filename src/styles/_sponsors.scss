@@ -1,10 +1,23 @@
 @import "./tokens.scss";
 
+#sponsors {
+  text-align: center;
+  p {
+    font-size: 1.5em;
+    padding: 2em 0;
+  }
+
+  a {
+    color: $color-text-heading-fallback;
+  }
+}
+
 .sponsors {
   display: grid;
   gap: 1.5rem 1rem;
   grid-template-columns: 1fr;
-
+  margin: auto;
+ 
   .sponsor {
     display: flex;
     justify-content: center;
