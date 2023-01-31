@@ -46,3 +46,11 @@
     }
   }
 }
+@include viewport(mobile) {
+  #about-section,
+  #ssss-section {
+    h2 {
+      text-align: center;
+    }
+  }
+}
