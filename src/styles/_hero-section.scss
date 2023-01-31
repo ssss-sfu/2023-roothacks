@@ -9,8 +9,15 @@
   gap: 2rem;
   padding-top: 5em;
 
+  .btn {
+    a {
+      text-decoration: none;
+      color: white;
+    }
+  }
+  
   p {
-    font-size: 1.2em;
+    font-size: clamp(1.2rem, 4vw, 1.8rem);;
   }
   
   img#tree-cloud {
