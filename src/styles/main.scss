@@ -30,7 +30,10 @@ html, body {
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
-  background: $color-background;
+  background: url('/build/assets/images/roots.svg'), $color-background;
+  background-size: cover;
+  background-repeat: no-repeat;
+
 }
 
 img, picture, video, canvas, svg {

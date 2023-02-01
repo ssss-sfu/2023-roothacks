@@ -9,6 +9,16 @@
   gap: 2rem;
   padding-top: 5em;
 
+  h3 {
+    color: white;
+    background: transparent;
+    -webkit-background-clip: unset;
+    -webkit-text-fill-color: unset; 
+    -moz-background-clip: unset;
+    -moz-text-fill-color: unset;
+    margin-bottom: 2.81rem;
+  }
+
   .btn {
     a {
       text-decoration: none;
@@ -26,7 +36,7 @@
 
   @include viewport(tablet) {
     img#tree-cloud {
-      width: 15em;
+      width: 45%;
     }
   }
 
