@@ -31,7 +31,7 @@ html, body {
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
-  background: url('/build/assets/images/roots.svg'), $color-background;
+  background: url('./assets/images/roots.svg'), $color-background;
   background-size: cover;
   background-repeat: no-repeat;
 
