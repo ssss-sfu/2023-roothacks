@@ -18,4 +18,11 @@
   &:active {
     transform: translateY(0.25rem);
   }
+
+  &:disabled {
+    &:hover {
+      cursor: not-allowed;
+      transform: none;
+    }
+  }
 }
