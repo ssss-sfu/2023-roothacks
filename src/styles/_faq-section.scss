@@ -7,12 +7,17 @@
     gap: 2rem;
     margin-top: 2.75rem;
     
+    @include viewport(desktop) {
+      grid-template-columns: 1fr 1fr;
+    }
+    
     .faq-item {
       position: relative;
       background: linear-gradient(180deg, rgba(255, 255, 255, 0.1) 66.15%, rgba(255, 255, 255, 0) 100%);
       padding: 2rem;
       border-radius: 2rem;
       max-width: 32.69rem;
+      height: fit-content;
       
       @include viewport(tablet-desktop) {
         margin-left: 7rem;
@@ -42,9 +47,11 @@
 
       .content {
         overflow: hidden;
-        max-height: 0;
+        max-height: 0vh;
         transition: max-height 0.5s;
       }
+
+    
 
       & > img {
         position: absolute;
@@ -79,10 +86,6 @@
           filter: saturate(1);
         }
       }
-    }
-
-    @include viewport(desktop) {
-      grid-template-columns: 1fr 1fr;
     }
   }
 }
