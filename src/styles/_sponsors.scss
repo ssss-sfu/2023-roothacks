@@ -15,7 +15,7 @@
 .sponsors {
   display: grid;
   gap: 1.5rem 1rem;
-  grid-template-columns: 1fr;
+  grid-template-columns: 1fr 1fr;
   margin: auto;
  
   .sponsor {
@@ -28,18 +28,23 @@
       rgba(255, 255, 255, 0) 100%
     );
     border-radius: 30px;
+
+    img {
+      height: 10em;
+    }
+    grid-column: span 2;
   }
+
 
   @include viewport(desktop) {
     grid-template-columns: repeat(6, 1fr);
-    .sponsor:first-child {
-      grid-column: span 6;
-    }
-    .sponsor:where(:nth-child(2), :nth-child(3), :nth-child(4), :nth-child(5)) {
+    .sponsor {
       grid-column: span 3;
     }
-    .sponsor:nth-child(n + 6) {
-      grid-column: span 2;
+    .sponsor:first-child, .sponsor:nth-child(2) {
+      grid-column: span 6;
     }
+
   }
+
 }
